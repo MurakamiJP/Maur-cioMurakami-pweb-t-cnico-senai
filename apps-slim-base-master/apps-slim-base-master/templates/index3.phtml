@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../vendor/fontawesome/css/solid.min.css">
+
+    <title>Lista dos Carros</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <nav>
+                <a href="/home/">Home</a>
+                <a href="/cadastro/">Cadastro</a>
+                <a href="/lista/">Lista de Carros</a>
+                <a href="/atualizar/">Atualizar Lista</a>
+            </nav>
+        </div>
+
+        <h1>
+            Lista dos carros cadastrados!
+        </h1>
+        
+        <h1>Modelo:</h1>
+        <input name="modelo" value="<?php echo $carro[0]['modelo']; ?>" size="25" type="text">
+        <h1>Marca:</h1>
+        <input name="marca" value="<?php echo $carro[0]['marca']; ?>" size="25" type="text">
+        <h1>Ano:</h1>
+        <input name="ano" value="<?php echo $carro[0]['ano']; ?>" size="25" type="text">
+        <h1>Dono:</h1>
+        <input name="dono" value="<?php echo $carro[0]['nome_dono']; ?>" size="25" type="text">
+
+    </div>
+    
+</body>
+
+<script src="/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
